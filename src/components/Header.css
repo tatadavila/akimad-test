@@ -1,12 +1,18 @@
-headerContainer {
-  align-items: flex-start;
+.headerContainer {
+  align-items: center;
   display: flex;
   flex-direction: column;
   flex-wrap: nowrap;
   justify-content: center;
+  margin-top: 10px;
 }
 
-img {
-  height: 230px;
-  width: 450px;
+.icon {
+  height: 20vh;
+  width: auto;
+}
+
+.title {
+  height: 10vh;
+  width: auto;
 }
