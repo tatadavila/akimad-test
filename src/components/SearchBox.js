@@ -1,31 +1,27 @@
-import React, {useState} from 'react'
-import {Input} from 'antd'
+import React from "react";
+import TextField from "@mui/material/TextField";
 
-import "./SearchBox.css"
+import "./SearchBox.css";
 
-const {Search} = Input
-
+// const {Search} = Input
 
 const SearchBox = () => {
 
-  const [onLoading, setOnLoading] = useState(false)
-
-  const onSearch = value => {
-    setOnLoading(true)
-    console.log(value)
+  const onSearch = (value) => {
+    console.log(value);
   };
 
   return (
-    <div className='headerContainer'>
-      <Search
-        enterButton="Search"
-        loading={onLoading}
-        placeholder='Enter the user name'
+    <div>
+      <TextField
+        id="userSearch"
+        label="Search User"
+        margin="normal"
         onSearch={onSearch}
-        type={"search"}
+        type="search"
       />
     </div>
-  )
-}
+  );
+};
 
-export default SearchBox
+export default SearchBox;
