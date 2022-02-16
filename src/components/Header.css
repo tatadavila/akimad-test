@@ -1,0 +1,12 @@
+headerContainer {
+  align-items: flex-start;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: center;
+}
+
+img {
+  height: 230px;
+  width: 450px;
+}

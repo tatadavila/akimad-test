@@ -1,0 +1,8 @@
+.ant-input, .ant-btn {
+  height: 2rem;
+}
+
+.ant-btn {
+  background-color: black;
+  color: white;
+}
