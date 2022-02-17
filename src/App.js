@@ -1,18 +1,19 @@
-import React, {useState} from 'react';
-import './App.css';
-import {Header, Loader, SearchBox, UserList} from './components/index'
+import React, { useState } from "react";
+import "./App.css";
+import { Header, Loader, SearchBox, UserList } from "./components/index";
 
 function App() {
-  const [showLoader, setShowLoader] = useState(false);
+  const [showLoader] = useState(false);
+  const [searchValue, setSearchValue] = useState("");
+  const [showUserList] = useState(false);
   return (
     <div className="App">
       {showLoader ? <Loader /> : null}
-      
       <Header />
-      <SearchBox />
-      <UserList />
+      <SearchBox value={searchValue} setValue={setSearchValue} />
+      <UserList show={showUserList} />
     </div>
   );
 }
 
-export default App
+export default App;

@@ -6,3 +6,17 @@
   background-color: black;
   color: white;
 }
+
+#searchButton {
+  margin: 16px 0 8px 0;
+  padding: 16.5px 14px;
+}
+
+.searchContainer {
+  align-items: center;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin: 20px 0;
+  
+}
