@@ -20,9 +20,9 @@ const SearchBox = ({ value, setValue }) => {
         onChange={onChange}
         value={value}
       />
-      <IconButton color="secondary" id="searchButton" variant="contained" size="large" >
+      {/* <IconButton color="secondary" id="searchButton" variant="contained" size="large" >
         <Search />
-      </IconButton>
+      </IconButton> */}
     </div>
   );
 };
