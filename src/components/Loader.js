@@ -3,6 +3,7 @@ import Backdrop from "@mui/material/Backdrop";
 import CircularProgress from "@mui/material/CircularProgress";
 
 const Loader = ({show}) => {
+  console.log({show});
   return (
     <>
       <Backdrop
